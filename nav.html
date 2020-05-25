@@ -1,0 +1,241 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<style>
+
+body{
+	width: 1024px;
+	margin: 0;
+	padding: 0;
+	color: white;
+	background-color: black;
+}
+
+h1{
+	font-size: 12pt;
+}
+
+ul{
+	list-style-type: none;
+	margin-left: -24px;
+}
+
+li{
+	line-height: 150%;
+}
+
+#ID_Header{
+	border-bottom: 2px dotted black;
+	margin: 0px 4px 8px 0px;
+	padding: 0px 0px 0px 8px
+}
+
+#ID_Footer{
+	border-top: 2px dotted black;
+	margin: 4px 0px 32px 0px;
+	padding: 8px 0px 0px 8px
+}
+
+#ID_Tree{
+	padding: 0px;
+}
+
+#ID_AppData{
+	display: none;
+}
+
+.CLS_NoJump{
+	color: lavender;
+}
+
+.CLS_Jump{
+	color: white;
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+.CLS_Jump:hover{
+	color: black;
+	background-color: lightblue;
+	text-decoration: none;
+}
+
+.CLS_Indent1{
+	margin-left: 5px;
+}
+
+.CLS_Indent2{
+	margin-left: 16px;
+}
+
+</style>
+
+<title>容器创建过程分析</title>
+
+</head>
+
+<body>
+
+<div id='ID_AppLoading'>
+	<script>document.write('Loading...');</script>
+	<noscript>Javascript must be enabled for viewing this webiste.</noscript>
+</div>
+
+<div id='ID_AppData'>
+
+<ul id='ID_DataInfoItems'>
+	<li level="0" sub="1" href="3e32063d_dc591124_0.qrich.html">容器创建过程分析</li>
+	<li level="1" sub="12" href="4b3b069c_bc602f0_0.html" attach="image001.png">refresh</li>
+	<li level="2" href="590206fb_2b5705bf_0.html" attach="image001.png;image002.png;image003.png;image004.png;image005.png">prepareRefresh</li>
+	<li level="2" href="590406fc_642208c4_0.html" attach="image001.png;image002.png;image003.png">obtainFreshBeanFactory</li>
+	<li level="2" href="590606fd_4472073e_0.html" attach="image001.png;image002.png;image003.png;image004.png;image005.png;image006.png;image007.png">prepareBeanFactory</li>
+	<li level="2" href="590806fe_675308f4_0.html" attach="image001.png;image002.png">postProcessBeanFactory</li>
+	<li level="2" sub="1" id="18" href="590a06ff_c8040cb4_0.html" attach="image001.png">invokeBeanFactoryPostProcessors</li>
+	<li level="3" id="20" href="6797075e_c8040cb4_0.html" attach="image001.png;image002.png;image003.png;image004.png;image005.png;image006.png">invokeBeanFactoryPostProcessors</li>
+	<li level="2" href="590c0700_8efc0ab5_0.html" attach="image001.png;image002.png;image003.png;image004.png;image005.png">registerBeanPostProcessors</li>
+	<li level="2" href="590e0701_3e5306eb_0.html" attach="image001.png;image002.png">initMessageSource</li>
+	<li level="2" id="21" href="59100702_ca040cb8_0.html" attach="image001.png;image002.png">initApplicationEventMulticaster</li>
+	<li level="2" href="59120703_123f03ad_0.html">onRefresh</li>
+	<li level="2" href="59140704_3fd4071f_0.html" attach="image001.png;image002.png;image003.png">registerListeners</li>
+	<li level="2" sub="1" href="6031072c_c63e0c98_0.html" attach="image001.png;image002.png;image003.png;image004.png">finishBeanFactoryInitialization</li>
+	<li level="3" sub="1" id="22" href="6f18078b_7b7609f2_0.html" attach="image001.png">preInstantiateSingletons</li>
+	<li level="4" sub="1" id="23" href="7ebd07ea_ae102b7_0.html" attach="image001.png;image002.png;image003.png">getBean</li>
+	<li level="5" sub="2" href="8f22084a_15d103eb_0.html" attach="image001.png;image002.png;image003.png">createBean</li>
+	<li level="6" id="24" href="a04508a9_901d0ab9_0.html" attach="image001.png">resolveBeforeInstantiation</li>
+	<li level="6" sub="2" id="25" href="f4ab0b35_1e08049e_0.html" attach="image001.png;image002.png;image003.png;image004.png;image005.png;image006.png">doCreateBean</li>
+	<li level="7" id="26" href="bb30b94_20ad04e1_0.html" attach="image001.png;image002.png;image003.png">populateBean</li>
+	<li level="7" sub="1" id="27" href="bb50b95_2b4805a9_0.html" attach="image001.png;image002.png;image003.png;image004.png">initializeBean</li>
+	<li level="8" id="28" href="236e0bf4_3eb606f5_0.html" attach="image001.png;image002.png">invokeInitMethods</li>
+	<li level="2" href="6033072d_25250551_0.html" attach="image001.png;image002.png;image003.png;image004.png">finishRefresh</li>
+</ul>
+
+</div>
+
+<div id='ID_AppSafeFrame' style='display: none;'>
+
+	<div id='ID_Header'>
+	</div>
+
+	<div id='ID_Workspace'>
+		<div id='ID_Tree'>
+		</div>
+	</div>
+
+	<div id='ID_Footer'>
+	</div>
+
+</div>
+
+</body>
+
+<script type="text/javascript" language="javascript" src="jquery.js"></script>
+
+<script>
+
+var _trim=function(s){return (s||'').replace(/^\s+|\s+$/g, '');};
+var _trim_l=function(s){return (s||'').replace(/^\s+/g, '');};
+var _trim_r=function(s){return (s||'').replace(/\s+$/g, '');};
+
+$(document).ready(function(){
+
+	var bItem0=false, xWin=window.parent._item_content;
+
+	var xTree=function(vItems, iRow, iLvl, jDiv){
+
+		var jUl=$('<ul>'); jDiv.append(jUl);
+	
+		if(iLvl>1) jUl.hide();
+
+		var jLi=undefined, j=iRow;
+		while(j < vItems.length){
+			var xItem=vItems[j];
+			var iLvl2=xItem.iLevel, nSub=xItem.nSub, sTitle=xItem.sTitle||'== Untitled ==', sLink=xItem.sHref;
+
+			if(iLvl2 < iLvl){
+				return j;
+			}else if(iLvl2 > iLvl){
+				j=xTree(vItems, j, iLvl+1, jLi);
+			}else{
+				jLi=$('<li>');
+
+				if(nSub>0){
+
+					var jBtn=$('<img>'); jLi.append(jBtn); jBtn.attr('src', iLvl==0 ? 'icon_minus.gif' : 'icon_plus.gif');
+
+					jBtn.click(function(){
+						var jBtn=$(this);
+						var jUl=jBtn.parent().children('ul');
+						var sImg=jBtn.attr('src');
+						if(sImg.match(/plus/i)){ // if(jUl.css('visibility')=='visible'){
+							jUl.show();
+							jBtn.attr('src', sImg.replace(/plus/i, 'minus'));
+						}else{
+							jUl.hide();
+							jBtn.attr('src', sImg.replace(/minus/i, 'plus'));
+						}
+					});
+				}
+
+				{
+					//var jIco=$('<img>'); jLi.append(jIco); jIco.attr('src', 'custom_icon.gif');
+				}
+
+				if(sLink){
+					var jA=$('<a>');
+					jA.attr('href', sLink);
+					jA.attr('target', '_item_content');
+					jA.addClass('CLS_Jump');
+					if(nSub>0) jA.addClass('CLS_Indent1'); else jA.addClass('CLS_Indent2');
+					jA.text(sTitle); jLi.append(jA);
+
+					/*jA.click(function(){
+						var jA=$(this), sHref=jA.attr('href'), sTitle=jA.text();
+						xWin.location=sHref;
+						return false;
+					});*/
+
+					if(!bItem0 && xWin){
+						xWin.location=sLink;
+						bItem0=true;
+					}
+				}else{
+					var jTxt=$('<span>'); jLi.append(jTxt); jTxt.text(sTitle);
+					jTxt.addClass('CLS_NoJump');
+					if(nSub>0) jTxt.addClass('CLS_Indent1'); else jTxt.addClass('CLS_Indent2');
+				}
+				jUl.append(jLi);
+				j++;
+			}
+		}
+	};
+
+	var jUl=$('#ID_DataInfoItems'), vItems=[];
+	jUl.children('li').each(function(i, xLi){
+		var jLi=$(xLi), xItem={};
+		xItem.iLevel=parseInt(jLi.attr('level')||'');
+		xItem.nSub=parseInt(jLi.attr('sub')||'0');
+		xItem.nID=parseInt(jLi.attr('id')||'-1');
+		xItem.sHref=jLi.attr('href')||'';
+		xItem.sAttach=jLi.attr('attach')||'';
+		xItem.sRelated=jLi.attr('related')||'';
+		xItem.sTitle=jLi.text()||'';
+		vItems[vItems.length]=xItem;
+	});
+
+	jUl.html(''); //clear the internal data when done;
+
+	if(vItems.length>0){
+		xTree(vItems, 0, 0, $('#ID_Tree'));
+		$('#ID_AppLoading').hide();
+		$('#ID_AppSafeFrame').show();
+	}
+
+});
+
+</script>
+
+</html>
